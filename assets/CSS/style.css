@@ -367,6 +367,9 @@ form {
   justify-content: center;
    
 }
+.search-input-wrapper,.checkbox-con1{
+    width: 100%;
+}
 }
 
 @media(max-width:540px) {
@@ -394,14 +397,28 @@ form {
     .card-info{
         font-size: 14px;
     }
-    .button-group button{
+   .button-group .remove-button,
+.button-group .toggle-availability-btn{
         padding: 8px 12px;
+        font-size: 12px;
+    }
+    .button-group .remove-button{
+        padding: 8px 10px;
     }
 }
 
 @media(max-width:400px) {
     .check {
         flex-wrap: wrap;
+    }
+    form{
+        width: 100%;
+    }
+    .con-search-check{
+          width: 100%;
+    }
+    .search-filter{
+         width: 100%;
     }
 }
 
