@@ -136,7 +136,7 @@ const cardsCategories = document.getElementById('cardsbooks-container')
 function renderBooks(booksToRender) {
     cardsCategories.innerHTML = " "
     if (booksToRender.length === 0) {
-        return cardsCategories.innerHTML = `<div style="display:flex;  align-items: center;justify-content: center; width:100%" ><p style=" color: #777; font-weight:700 ;font-size:30px;">There are not any book ! </p></div>`
+        return cardsCategories.innerHTML = `<div style="display:flex;  align-items: center;justify-content: center; width:100%" ><p style=" color: #dc143c; font-weight:700 ;font-size:30px;">There are not any book ! </p></div>`
     }
     booksToRender.forEach(book => {
         const bookInfo = book.displayInfo()
