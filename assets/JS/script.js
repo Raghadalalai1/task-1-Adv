@@ -160,7 +160,7 @@ function renderBooks(booksToRender) {
    ${additionalInfo}
     
  <div style="display: flex;align-items: center;justify-content: flex-start; gap:7px">
- ${bookInfo.isAvailable ? '<i class="fa-solid fa-check" style="color: #ffffff;"></i>' : '<i class="fa-solid fa-xmark" style="color: #ffffff;"></i>'}   <p class=${bookInfo.isavilable ? 'avillable' : 'notavilabel'}><span> the state :</span>${bookInfo.isAvailable}</p>
+ ${bookInfo.isAvailable ? '<i class="fa-solid fa-check" style="color: #ffffff;"></i>' : '<i class="fa-solid fa-xmark" style="color: #ffffff;"></i>'}   <p class=${bookInfo.isavilable ? 'avillable' : 'notavilabel'}><span> the state :</span>${bookInfo.state}</p>
 </div>
  </div>
     <div class='button-group'>
