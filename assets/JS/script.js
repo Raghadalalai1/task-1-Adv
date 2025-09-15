@@ -164,7 +164,7 @@ function renderBooks(booksToRender) {
 </div>
  </div>
     <div class='button-group'>
-    <button class="toggle-availability-btn" data-book-title="${bookInfo.title}">${bookInfo.isAvailable ? 'Available' : 'Not Available'}</button>
+    <button class=${bookInfo.isAvailable ? 'toggle-availability-btn':'toggle-notavailability-btn'} data-book-title="${bookInfo.title}">${bookInfo.isAvailable ? 'Available' : 'Not Available'}</button>
     <button class="remove-button" data-book-title="${bookInfo.title}">Remove Book</button>
     </div>
 
@@ -180,6 +180,15 @@ function renderBooks(booksToRender) {
 
     });
     document.querySelectorAll('.toggle-availability-btn').forEach(
+        button => {
+            button.addEventListener('click', (event) => {
+                const title = event.target.dataset.bookTitle
+                myLibrary.toggleAvailability(title)
+                renderBooks(myLibrary.getAllBooks())
+            })
+        }
+    )
+    document.querySelectorAll('.toggle-notavailability-btn').forEach(
         button => {
             button.addEventListener('click', (event) => {
                 const title = event.target.dataset.bookTitle

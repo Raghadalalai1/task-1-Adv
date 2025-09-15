@@ -279,7 +279,10 @@ form {
     gap: 10px;
 }
 
-.button-group button {
+.button-group .remove-button,
+.button-group .toggle-availability-btn
+
+{
     border: none;
     background-color: #ffffff;
     color: #dc143c;
@@ -290,6 +293,20 @@ form {
     cursor: pointer;
 
 }
+.button-group .toggle-notavailability-btn
+
+{
+    border: none;
+    background-color: #dc143c;
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+
+}
+
 
 
 .title-icon {
