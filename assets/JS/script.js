@@ -165,7 +165,7 @@ function renderBooks(booksToRender) {
  </div>
     <div class='button-group'>
     <button class=${bookInfo.isAvailable ? 'toggle-availability-btn':'toggle-notavailability-btn'} data-book-title="${bookInfo.title}">${bookInfo.isAvailable ? 'Available' : 'Not Available'}</button>
-    <button class="remove-button" data-book-title="${bookInfo.title}">Remove Book</button>
+    <button class="remove-button" data-book-title="${bookInfo.title}">Remove</button>
     </div>
 
 
