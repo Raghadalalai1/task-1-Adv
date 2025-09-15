@@ -1,0 +1,414 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+    font-family: Inter;
+}
+
+.containair {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 30px;
+}
+
+.titel {
+    font-size: 40px;
+    font-weight: 700;
+    color: crimson;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.5);
+}
+
+.input-search {
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    border: 1px solid gray;
+    background-color: beige;
+    padding-left: 40px;
+  
+}
+
+.book-input-group {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.search-input-wrapper {
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+
+.icon {
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+    
+}
+
+form {
+    width: 90%;
+
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 5px 5px 10px 1px rgb(204, 204, 204);
+    padding: 50px 20px;
+    border-radius: 30px;
+    background-color: rgba(255, 164, 183, 0.281);
+
+
+
+}
+
+.container-inputs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.container-inputs input,
+.book-input-group input {
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid gray;
+    margin-top: 10px;
+    background-color: beige;
+}
+
+.book-input-group input {
+    width: 50%;
+}
+
+.container-inputs label,
+.select-caterory label,
+.book-input-group label {
+    font-weight: 600;
+    color: crimson;
+    margin-bottom: 10px;
+
+}
+
+.book-category {
+    width: 100%;
+}
+
+.book-category,
+.book-category1 {
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+    background-color: beige;
+    color: gray;
+}
+
+.book-name {
+
+
+    width: 100%;
+
+}
+
+.checkbox-con,
+.checkbox-con1 {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 15px;
+
+}
+
+.checkbox-con1 {
+    width: 50%;
+    justify-content: end;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+}
+
+.check label {
+    color: rgb(66, 66, 66);
+    font-weight: 500;
+}
+
+.checkbox1,
+.checkbox2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.btn {
+    background-color: crimson;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid crimson;
+    width: 150px;
+    font-weight: 600;
+    font-size: medium;
+
+}
+
+.form-titel {
+    color: crimson;
+}
+
+.search-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    gap: 10px;
+    margin-top: 20px;
+    flex-direction: column;
+
+}
+
+.btn-input {
+    width: 100%;
+}
+
+.cardsbooks-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.select-caterory {
+    display: flex;
+    align-items: self-start;
+    flex-direction: column;
+    width: 50%;
+}
+
+.card-book {
+    border-radius: 20px;
+    background: #dc143c;
+    padding: 20px;
+    width: 350px;
+    height: 300px;
+    box-shadow: 5px 5px 10px 1px rgb(204, 204, 204);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.card-book .card-con {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card-book h3 {
+    font-size: 25px;
+    color: white;
+
+
+}
+
+.card-book p span {
+
+    color: white;
+    font-weight: 600;
+
+
+}
+
+.card-info {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.card-info p {
+
+    color: #ffbecd;
+}
+
+.button-group {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-group button {
+    border: none;
+    background-color: #ffffff;
+    color: #dc143c;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 1px solid crimson;
+    cursor: pointer;
+
+}
+
+.title-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.con-search-check {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+@media(max-width:859px) {
+   .cardsbooks-container{
+    justify-content: center;
+   }
+}
+
+@media(max-width:800px) {
+    .container-inputs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .book-name {
+        width: 100%;
+    }
+
+    .checkbox-con {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .book-category {
+        width: 100%;
+    }
+
+    .check {
+        width: 100%;
+        justify-content: start;
+    }
+
+    .select-caterory {
+        width: 100%;
+    }
+
+    .book-input-group input {
+        width: 100%;
+    }
+    .con-search-check {
+ 
+  flex-wrap: wrap;
+  justify-content: center;
+   
+}
+}
+
+@media(max-width:540px) {
+
+    .book-name {
+        flex-wrap: wrap !important;
+    }
+
+    .container-inputs input {
+        width: 100%;
+    }
+}
+
+@media(max-width:444px) {
+    .titel {
+        font-size: 30px;
+    }
+
+    .form-titel {
+        font-size: 20px;
+    }
+    .card-book h3{
+ font-size: 20px;
+    }
+    .card-info{
+        font-size: 14px;
+    }
+    .button-group button{
+        padding: 8px 12px;
+    }
+}
+
+@media(max-width:400px) {
+    .check {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:660px) {
+
+    .search-filter {
+        flex-wrap: wrap;
+        gap: 20px;
+
+    }
+
+    .checkbox-con1 {
+        justify-content: flex-start;
+    }
+
+    .input-search {
+        width: 100%;
+    }
+
+    .book-category1,
+    .checkbox-con1 {
+        width: 100%;
+    }
+    .search-input-wrapper{
+        width: 100%;
+    }
+
+}
